@@ -1,0 +1,1 @@
+{"title":"caps lock to escape or command if with other key","rules":[{"description":"Caps Lock → Hyper Key (⌃⌥⇧⌘) (Caps Lock if alone)","manipulators":[{"from":{"key_code":"caps_lock"},"to":[{"key_code":"left_shift","modifiers":["left_command"]}],"to_if_alone":[{"key_code":"escape"}],"type":"basic"}]}]}
