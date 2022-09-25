@@ -17,6 +17,100 @@
         },
         "rules": [
           {
+            "description": "Hyper commands",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "c",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_shift",
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "c",
+                    "modifiers": [
+                      "command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "v",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_shift",
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "v",
+                    "modifiers": [
+                      "command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "x",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_shift",
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "x",
+                    "modifiers": [
+                      "command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+
+              {
+                "from": {
+                  "key_code": "f",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_shift",
+                      "left_command",
+                      "left_control",
+                      "left_option"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "z",
+                    "modifiers": [
+                      "command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "hyper + jklh to move",
             "manipulators": [
               {
@@ -680,10 +774,7 @@
                 },
                 "to": [
                   {
-                    "key_code": "7",
-                    "modifiers": [
-                      "left_shift"
-                    ]
+                    "key_code": "equal_sign"
                   }
                 ],
                 "type": "basic"
@@ -704,7 +795,10 @@
                 },
                 "to": [
                   {
-                    "key_code": "equal_sign"
+                    "key_code": "7",
+                    "modifiers": [
+                      "left_shift"
+                    ]
                   }
                 ],
                 "type": "basic"
@@ -725,7 +819,7 @@
                 },
                 "to": [
                   {
-                    "key_code": "0",
+                    "key_code": "8",
                     "modifiers": [
                       "left_shift"
                     ]
@@ -749,7 +843,7 @@
                 },
                 "to": [
                   {
-                    "key_code": "close_bracket",
+                    "key_code": "0",
                     "modifiers": [
                       "left_shift"
                     ]
@@ -773,7 +867,8 @@
                 },
                 "to": [
                   {
-                    "key_code": "close_bracket"
+                    "key_code": "close_bracket",
+                    "modifiers":["left_shift"]
                   }
                 ],
                 "type": "basic"
@@ -794,10 +889,7 @@
                 },
                 "to": [
                   {
-                    "key_code": "8",
-                    "modifiers": [
-                      "left_shift"
-                    ]
+                    "key_code": "close_bracket"
                   }
                 ],
                 "type": "basic"
@@ -1455,7 +1547,6 @@
                 "from": {
                   "key_code": "backslash",
                   "modifiers": {
-
                     "mandatory": [
                       "shift"
                     ],
